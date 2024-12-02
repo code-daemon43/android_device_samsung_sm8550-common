@@ -57,6 +57,10 @@ type vendor_sysfs_thermal, fs_type, sysfs_type;
 type vendor_sysfs_touchscreen, fs_type, sysfs_type;
 type vendor_sysfs_touchscreen_writable, fs_type, sysfs_type;
 
+# Backligt
+type vendor_sysfs_backlight, fs_type, sysfs_type;
+type vendor_sysfs_backlight_writable, fs_type, sysfs_type;
+
 # Vibrator
 type vendor_sysfs_vib_support, fs_type, sysfs_type;
 type vendor_sysfs_vib_writable, fs_type, sysfs_type;

@@ -78,6 +78,12 @@ genfscon sysfs "/devices/virtual/sec/tsp"                                       
 genfscon sysfs "/devices/virtual/sec/tsp/cmd"                                                u:object_r:vendor_sysfs_touchscreen_writable:s0
 genfscon sysfs "/devices/virtual/sec/tsp/ear_detect_enable"                                  u:object_r:vendor_sysfs_touchscreen_writable:s0
 genfscon sysfs "/devices/virtual/sec/tsp/prox_power_off"                                     u:object_r:vendor_sysfs_touchscreen_writable:s0
+genfscon sysfs "/devices/virtual/sec/tsp/prox_power_on"                                      u:object_r:vendor_sysfs_touchscreen_writable:s0
+genfscon sysfs "/devices/virtual/lcd/panel/fp_green_circle"                                  u:object_r:vendor_sysfs_touchscreen_writable:s0
+
+# Backlight
+genfscon sysfs "/class/backlight/panel0-backlight/brightness"                 u:object_r:vendor_sysfs_backlight_writable:s0
+genfscon sysfs "/class/lcd/panel/mask_brightness"                             u:object_r:vendor_sysfs_backlight_writable:s0
 
 # Vibrator
 genfscon sysfs "/devices/virtual/sec_vib_inputff/control/use_sep_index"       u:object_r:vendor_sysfs_vib_writable:s0

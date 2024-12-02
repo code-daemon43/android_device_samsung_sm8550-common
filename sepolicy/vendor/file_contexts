@@ -61,6 +61,10 @@
 /dev/ttyGS[0-9]*                             u:object_r:serial_device:s0
 /dev/ttyHS[0-9]*                             u:object_r:serial_device:s0
 
+# panel-10 backlight
+/sys/class/backlight/panel[0-9]+-backlight/brightness u:object_r:vendor_sysfs_backlight_writable:s0
+/sys/class/lcd/panel/mask_brightness                  u:object_r:vendor_sysfs_backlight_writable:s0
+
 # Touchscreen
 /sys/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a90000.spi/spi_master/spi[0-9]/spi[0-9].[0-9]/wakeup(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/platform/soc/.*(/sm5714-fuelgauge|/sm5714-charger)/power_supply/.*       u:object_r:vendor_sysfs_battery:s0
