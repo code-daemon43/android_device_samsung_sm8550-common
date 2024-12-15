@@ -56,7 +56,7 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/vintf/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/derp/config/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/vintf/manifest_kalama.xml \
@@ -110,20 +110,20 @@ TARGET_KERNEL_EXT_MODULE_ROOT := kernel/samsung/sm8550-modules
 BOARD_USES_METADATA_PARTITION := true
 
 # Partitions
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/derp/config/BoardConfigReservedSize.mk
 BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := false
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_CACHEIMAGE_PARTITION_SIZE := 629145600
 BOARD_DTBOIMG_PARTITION_SIZE := 16777216
 BOARD_INIT_BOOT_IMAGE_PARTITION_SIZE := 8388608
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 109051904
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 109576192
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
 
-BOARD_SUPER_PARTITION_SIZE := 12664700928
+BOARD_SUPER_PARTITION_SIZE := 11643387904
 BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_dlkm system_ext vendor vendor_dlkm
-BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 12660506624
+BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 11643387904
 
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 
